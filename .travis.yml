@@ -1,0 +1,9 @@
+language: objective-c
+osx_image: xcode64
+before_install: 
+  - brew update
+  - brew upgrade xctool
+  - brew install carthage
+  - carthage bootstrap --verbose
+script:
+  - xctool test -project Hope.ua.xcodeproj -scheme Hope.ua -sdk iphonesimulator8.1 ONLY_ACTIVE_ARCH=NO
