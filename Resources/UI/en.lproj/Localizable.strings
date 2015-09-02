@@ -1,0 +1,26 @@
+//errors
+"Error" = "Error";
+"Cannot update data." = "Cannot update data.";
+"Invalid request." = "Invalid request.";
+
+//menu sections
+"Issues" = "Issues";
+"Settings" = "Settings";
+
+//menu items
+"Live" = "Live";
+"TV Program" = "TV Program";
+"Favorites" = "Favorites";
+"History" = "History";
+"Downloads" = "Downloads";
+"Language" = "Language";
+"About the Channel" = "About the Channel";
+
+//languages
+"Select language" = "Select language";
+"Language changed" = "Language changed";
+"Pull down menu to update" = "Pull down menu to update";
+"System" = "System";
+"English" = "English";
+"Русский" = "Russian";
+"Українська" = "Ukrainian";

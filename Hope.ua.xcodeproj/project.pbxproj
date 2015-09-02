@@ -1,0 +1,639 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		92BF6C4D1B96E31400067A6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92BF6C1B1B96E31400067A6D /* Assets.xcassets */; };
+		92BF6C691B96E31400067A6D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 92BF6C401B96E31400067A6D /* InfoPlist.strings */; };
+		92BF6C6A1B96E31400067A6D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 92BF6C421B96E31400067A6D /* Localizable.strings */; };
+		92BF6C6B1B96E31400067A6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BF6C471B96E31400067A6D /* AppDelegate.swift */; };
+		92BF6C6C1B96E31400067A6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BF6C491B96E31400067A6D /* ViewController.swift */; };
+		92BF6C711B96E32000067A6D /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BF6C6F1B96E32000067A6D /* Tests.swift */; };
+		92BF6C751B96E98300067A6D /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92BF6C721B96E98300067A6D /* ReactiveCocoa.framework */; };
+		92BF6C761B96E98300067A6D /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92BF6C731B96E98300067A6D /* Realm.framework */; };
+		92BF6C771B96E98300067A6D /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92BF6C741B96E98300067A6D /* RealmSwift.framework */; };
+		92BF6C791B96E9BA00067A6D /* LlamaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92BF6C781B96E9BA00067A6D /* LlamaKit.framework */; };
+		92F60F5D1B96EF9600B2B997 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92F60F5F1B96EF9600B2B997 /* Main.storyboard */; };
+		92F60F621B96EFD800B2B997 /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92F60F601B96EFD800B2B997 /* Launch.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		92BF6C0C1B96DF2C00067A6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92BF6BEF1B96DF2C00067A6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92BF6BF61B96DF2C00067A6D;
+			remoteInfo = Hope.ua;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		92BF6BF71B96DF2C00067A6D /* Hope.ua.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hope.ua.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		92BF6C0B1B96DF2C00067A6D /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		92BF6C1B1B96E31400067A6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		92BF6C1C1B96E31400067A6D /* Hope.ua-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Hope.ua-Info.plist"; sourceTree = "<group>"; };
+		92BF6C1F1B96E31400067A6D /* en_flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = en_flag.png; sourceTree = "<group>"; };
+		92BF6C201B96E31400067A6D /* en_flag@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "en_flag@2x.png"; sourceTree = "<group>"; };
+		92BF6C211B96E31400067A6D /* ru_flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ru_flag.png; sourceTree = "<group>"; };
+		92BF6C221B96E31400067A6D /* ru_flag@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ru_flag@2x.png"; sourceTree = "<group>"; };
+		92BF6C231B96E31400067A6D /* ua_flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ua_flag.png; sourceTree = "<group>"; };
+		92BF6C241B96E31400067A6D /* ua_flag@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ua_flag@2x.png"; sourceTree = "<group>"; };
+		92BF6C261B96E31400067A6D /* header-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "header-background.png"; sourceTree = "<group>"; };
+		92BF6C271B96E31400067A6D /* header-background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "header-background@2x.png"; sourceTree = "<group>"; };
+		92BF6C281B96E31400067A6D /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		92BF6C291B96E31400067A6D /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
+		92BF6C2B1B96E31400067A6D /* menu-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-background.png"; sourceTree = "<group>"; };
+		92BF6C2C1B96E31400067A6D /* menu-background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-background@2x.png"; sourceTree = "<group>"; };
+		92BF6C2D1B96E31400067A6D /* menu-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-button.png"; sourceTree = "<group>"; };
+		92BF6C2E1B96E31400067A6D /* menu-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-button@2x.png"; sourceTree = "<group>"; };
+		92BF6C2F1B96E31400067A6D /* menu-disclosure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-disclosure.png"; sourceTree = "<group>"; };
+		92BF6C301B96E31400067A6D /* menu-disclosure@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-disclosure@2x.png"; sourceTree = "<group>"; };
+		92BF6C321B96E31400067A6D /* button-play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-play.png"; sourceTree = "<group>"; };
+		92BF6C331B96E31400067A6D /* button-play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-play@2x.png"; sourceTree = "<group>"; };
+		92BF6C351B96E31400067A6D /* toolbar-like.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toolbar-like.png"; sourceTree = "<group>"; };
+		92BF6C361B96E31400067A6D /* toolbar-like@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toolbar-like@2x.png"; sourceTree = "<group>"; };
+		92BF6C371B96E31400067A6D /* toolbar-save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toolbar-save.png"; sourceTree = "<group>"; };
+		92BF6C381B96E31400067A6D /* toolbar-save@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toolbar-save@2x.png"; sourceTree = "<group>"; };
+		92BF6C391B96E31400067A6D /* toolbar-share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toolbar-share.png"; sourceTree = "<group>"; };
+		92BF6C3A1B96E31400067A6D /* toolbar-share@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toolbar-share@2x.png"; sourceTree = "<group>"; };
+		92BF6C411B96E31400067A6D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		92BF6C431B96E31400067A6D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		92BF6C441B96E31400067A6D /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		92BF6C451B96E31400067A6D /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		92BF6C471B96E31400067A6D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		92BF6C491B96E31400067A6D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		92BF6C6E1B96E32000067A6D /* Hope.ua-Tests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Hope.ua-Tests-Info.plist"; sourceTree = "<group>"; };
+		92BF6C6F1B96E32000067A6D /* Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		92BF6C721B96E98300067A6D /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
+		92BF6C731B96E98300067A6D /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		92BF6C741B96E98300067A6D /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		92BF6C781B96E9BA00067A6D /* LlamaKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LlamaKit.framework; path = Carthage/Build/iOS/LlamaKit.framework; sourceTree = "<group>"; };
+		92F60F5E1B96EF9600B2B997 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		92F60F611B96EFD800B2B997 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Launch.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		92BF6BF41B96DF2C00067A6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92BF6C791B96E9BA00067A6D /* LlamaKit.framework in Frameworks */,
+				92BF6C751B96E98300067A6D /* ReactiveCocoa.framework in Frameworks */,
+				92BF6C761B96E98300067A6D /* Realm.framework in Frameworks */,
+				92BF6C771B96E98300067A6D /* RealmSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92BF6C081B96DF2C00067A6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		92BF6BEE1B96DF2C00067A6D = {
+			isa = PBXGroup;
+			children = (
+				92BF6C1A1B96E31400067A6D /* Resources */,
+				92BF6C461B96E31400067A6D /* Sources */,
+				92BF6C6D1B96E32000067A6D /* Tests */,
+				92BF6C7A1B96E9C200067A6D /* Frameworks */,
+				92BF6BF81B96DF2C00067A6D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		92BF6BF81B96DF2C00067A6D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				92BF6BF71B96DF2C00067A6D /* Hope.ua.app */,
+				92BF6C0B1B96DF2C00067A6D /* Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		92BF6C1A1B96E31400067A6D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				92BF6C1B1B96E31400067A6D /* Assets.xcassets */,
+				92BF6C1C1B96E31400067A6D /* Hope.ua-Info.plist */,
+				92BF6C1D1B96E31400067A6D /* Images */,
+				92BF6C3B1B96E31400067A6D /* UI */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		92BF6C1D1B96E31400067A6D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				92BF6C1E1B96E31400067A6D /* flags */,
+				92BF6C251B96E31400067A6D /* header */,
+				92BF6C2A1B96E31400067A6D /* menu */,
+				92BF6C311B96E31400067A6D /* player */,
+				92BF6C341B96E31400067A6D /* toolbar */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		92BF6C1E1B96E31400067A6D /* flags */ = {
+			isa = PBXGroup;
+			children = (
+				92BF6C1F1B96E31400067A6D /* en_flag.png */,
+				92BF6C201B96E31400067A6D /* en_flag@2x.png */,
+				92BF6C211B96E31400067A6D /* ru_flag.png */,
+				92BF6C221B96E31400067A6D /* ru_flag@2x.png */,
+				92BF6C231B96E31400067A6D /* ua_flag.png */,
+				92BF6C241B96E31400067A6D /* ua_flag@2x.png */,
+			);
+			path = flags;
+			sourceTree = "<group>";
+		};
+		92BF6C251B96E31400067A6D /* header */ = {
+			isa = PBXGroup;
+			children = (
+				92BF6C261B96E31400067A6D /* header-background.png */,
+				92BF6C271B96E31400067A6D /* header-background@2x.png */,
+				92BF6C281B96E31400067A6D /* logo.png */,
+				92BF6C291B96E31400067A6D /* logo@2x.png */,
+			);
+			path = header;
+			sourceTree = "<group>";
+		};
+		92BF6C2A1B96E31400067A6D /* menu */ = {
+			isa = PBXGroup;
+			children = (
+				92BF6C2B1B96E31400067A6D /* menu-background.png */,
+				92BF6C2C1B96E31400067A6D /* menu-background@2x.png */,
+				92BF6C2D1B96E31400067A6D /* menu-button.png */,
+				92BF6C2E1B96E31400067A6D /* menu-button@2x.png */,
+				92BF6C2F1B96E31400067A6D /* menu-disclosure.png */,
+				92BF6C301B96E31400067A6D /* menu-disclosure@2x.png */,
+			);
+			path = menu;
+			sourceTree = "<group>";
+		};
+		92BF6C311B96E31400067A6D /* player */ = {
+			isa = PBXGroup;
+			children = (
+				92BF6C321B96E31400067A6D /* button-play.png */,
+				92BF6C331B96E31400067A6D /* button-play@2x.png */,
+			);
+			path = player;
+			sourceTree = "<group>";
+		};
+		92BF6C341B96E31400067A6D /* toolbar */ = {
+			isa = PBXGroup;
+			children = (
+				92BF6C351B96E31400067A6D /* toolbar-like.png */,
+				92BF6C361B96E31400067A6D /* toolbar-like@2x.png */,
+				92BF6C371B96E31400067A6D /* toolbar-save.png */,
+				92BF6C381B96E31400067A6D /* toolbar-save@2x.png */,
+				92BF6C391B96E31400067A6D /* toolbar-share.png */,
+				92BF6C3A1B96E31400067A6D /* toolbar-share@2x.png */,
+			);
+			path = toolbar;
+			sourceTree = "<group>";
+		};
+		92BF6C3B1B96E31400067A6D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				92BF6C401B96E31400067A6D /* InfoPlist.strings */,
+				92BF6C421B96E31400067A6D /* Localizable.strings */,
+				92F60F5F1B96EF9600B2B997 /* Main.storyboard */,
+				92F60F601B96EFD800B2B997 /* Launch.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		92BF6C461B96E31400067A6D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				92BF6C471B96E31400067A6D /* AppDelegate.swift */,
+				92BF6C481B96E31400067A6D /* Controllers */,
+				92BF6C4A1B96E31400067A6D /* Models */,
+				92BF6C4B1B96E31400067A6D /* ViewModels */,
+				92BF6C4C1B96E31400067A6D /* Views */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		92BF6C481B96E31400067A6D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				92BF6C491B96E31400067A6D /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		92BF6C4A1B96E31400067A6D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		92BF6C4B1B96E31400067A6D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		92BF6C4C1B96E31400067A6D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		92BF6C6D1B96E32000067A6D /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				92BF6C6E1B96E32000067A6D /* Hope.ua-Tests-Info.plist */,
+				92BF6C6F1B96E32000067A6D /* Tests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		92BF6C7A1B96E9C200067A6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92BF6C781B96E9BA00067A6D /* LlamaKit.framework */,
+				92BF6C721B96E98300067A6D /* ReactiveCocoa.framework */,
+				92BF6C731B96E98300067A6D /* Realm.framework */,
+				92BF6C741B96E98300067A6D /* RealmSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		92BF6BF61B96DF2C00067A6D /* Hope.ua */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92BF6C141B96DF2C00067A6D /* Build configuration list for PBXNativeTarget "Hope.ua" */;
+			buildPhases = (
+				92BF6BF31B96DF2C00067A6D /* Sources */,
+				92BF6BF41B96DF2C00067A6D /* Frameworks */,
+				92BF6BF51B96DF2C00067A6D /* Resources */,
+				92BF6C7B1B96EA9200067A6D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hope.ua;
+			productName = Hope.ua;
+			productReference = 92BF6BF71B96DF2C00067A6D /* Hope.ua.app */;
+			productType = "com.apple.product-type.application";
+		};
+		92BF6C0A1B96DF2C00067A6D /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92BF6C171B96DF2C00067A6D /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				92BF6C071B96DF2C00067A6D /* Sources */,
+				92BF6C081B96DF2C00067A6D /* Frameworks */,
+				92BF6C091B96DF2C00067A6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92BF6C0D1B96DF2C00067A6D /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = Hope.uaTests;
+			productReference = 92BF6C0B1B96DF2C00067A6D /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		92BF6BEF1B96DF2C00067A6D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = in.shoumikh;
+				TargetAttributes = {
+					92BF6BF61B96DF2C00067A6D = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 78E7V7QP35;
+					};
+					92BF6C0A1B96DF2C00067A6D = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 92BF6BF61B96DF2C00067A6D;
+					};
+				};
+			};
+			buildConfigurationList = 92BF6BF21B96DF2C00067A6D /* Build configuration list for PBXProject "Hope.ua" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ru,
+			);
+			mainGroup = 92BF6BEE1B96DF2C00067A6D;
+			productRefGroup = 92BF6BF81B96DF2C00067A6D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				92BF6BF61B96DF2C00067A6D /* Hope.ua */,
+				92BF6C0A1B96DF2C00067A6D /* Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		92BF6BF51B96DF2C00067A6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92BF6C4D1B96E31400067A6D /* Assets.xcassets in Resources */,
+				92BF6C691B96E31400067A6D /* InfoPlist.strings in Resources */,
+				92BF6C6A1B96E31400067A6D /* Localizable.strings in Resources */,
+				92F60F5D1B96EF9600B2B997 /* Main.storyboard in Resources */,
+				92F60F621B96EFD800B2B997 /* Launch.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92BF6C091B96DF2C00067A6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		92BF6C7B1B96EA9200067A6D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/LlamaKit.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		92BF6BF31B96DF2C00067A6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92BF6C6C1B96E31400067A6D /* ViewController.swift in Sources */,
+				92BF6C6B1B96E31400067A6D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92BF6C071B96DF2C00067A6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92BF6C711B96E32000067A6D /* Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		92BF6C0D1B96DF2C00067A6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92BF6BF61B96DF2C00067A6D /* Hope.ua */;
+			targetProxy = 92BF6C0C1B96DF2C00067A6D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		92BF6C401B96E31400067A6D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92BF6C411B96E31400067A6D /* en */,
+				92BF6C441B96E31400067A6D /* ru */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		92BF6C421B96E31400067A6D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92BF6C431B96E31400067A6D /* en */,
+				92BF6C451B96E31400067A6D /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		92F60F5F1B96EF9600B2B997 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92F60F5E1B96EF9600B2B997 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		92F60F601B96EFD800B2B997 /* Launch.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92F60F611B96EFD800B2B997 /* Base */,
+			);
+			name = Launch.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		92BF6C121B96DF2C00067A6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		92BF6C131B96DF2C00067A6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		92BF6C151B96DF2C00067A6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Hope.ua-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "in.shoumikh.Hope-ua";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		92BF6C161B96DF2C00067A6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Hope.ua-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "in.shoumikh.Hope-ua";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		92BF6C181B96DF2C00067A6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "$(SRCROOT)/Tests/Hope.ua-Tests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "in.shoumikh.Hope-uaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hope.ua.app/Hope.ua";
+			};
+			name = Debug;
+		};
+		92BF6C191B96DF2C00067A6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "$(SRCROOT)/Tests/Hope.ua-Tests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "in.shoumikh.Hope-uaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hope.ua.app/Hope.ua";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		92BF6BF21B96DF2C00067A6D /* Build configuration list for PBXProject "Hope.ua" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92BF6C121B96DF2C00067A6D /* Debug */,
+				92BF6C131B96DF2C00067A6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92BF6C141B96DF2C00067A6D /* Build configuration list for PBXNativeTarget "Hope.ua" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92BF6C151B96DF2C00067A6D /* Debug */,
+				92BF6C161B96DF2C00067A6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92BF6C171B96DF2C00067A6D /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92BF6C181B96DF2C00067A6D /* Debug */,
+				92BF6C191B96DF2C00067A6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 92BF6BEF1B96DF2C00067A6D /* Project object */;
+}

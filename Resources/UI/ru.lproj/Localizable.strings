@@ -1,0 +1,26 @@
+//errors
+"Error" = "Ошибка";
+"Cannot update data." = "Не удалось обновить данные.";
+"Invalid request." = "Неверный запрос.";
+
+//menu sections
+"Issues" = "Выпуски";
+"Settings" = "Настройки";
+
+//menu items
+"Live" = "Прямой эфир";
+"TV Program" = "Телепрограмма";
+"Favorites" = "Избранное";
+"History" = "История";
+"Downloads" = "Загрузки";
+"Language" = "Язык";
+"About the Channel" = "О телеканале";
+
+//languages
+"Select language" = "Выберите язык";
+"Language changed" = "Язык изменен";
+"Pull down menu to update" = "Потяните меню вниз чтобы обновить";
+"System" = "Системный";
+"English" = "Английский";
+"Русский" = "Русский";
+"Українська" = "Украинский";
